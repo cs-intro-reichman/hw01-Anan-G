@@ -5,6 +5,16 @@
  */ 
 public class Triangle {
 	public static void main(String[] args) {
-		// Put your code here	
+		int sideA = Integer.parseInt(args[0]);
+		int sideB = Integer.parseInt(args[1]);
+		int sideC = Integer.parseInt(args[2]);
+		boolean result;
+
+		result = ((sideA + sideB) > sideC) && ((sideB + sideC) > sideA) && ((sideC + sideA) > sideB);
+		
+		
+		System.out.println(sideA + ", " + sideB + ", " + sideC + ": " + result);
+		
+				
 	}
 }
